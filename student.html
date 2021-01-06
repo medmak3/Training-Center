@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>HTK Consulting</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.ico">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="css/style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script src="js/script.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item active"><a class="nav-link" href="index.html">Acceuil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A Propos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
+                                data-toggle="dropdown">Formations
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                   <a class="dropdown-item" href="course-qhse.html">QHSE </a>
+                                <a class="dropdown-item" href="course-soft-skills.html">Soft Skills </a>
+                                <a class="dropdown-item" href="course-office.html">Informatique </a>
+                                <a class="dropdown-item" href="course-Management-Marketing.html">Management et Marketing
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="teachers.html">Formateurs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Coûts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#"
+                                onclick="signOut()"><span>Déconnexion</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <div id="plan" class="section lb">
+        <div class="container">
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="pricing-table pricing-table-highlighted">
+                        <div class="pricing-table-header grd1">
+                            <h3>Bonjour,</h3>
+                            <h2>
+                                <span id="studentConnectedfName"></span>
+                                <span id="studentConnectedlName"></span>
+                            </h2>
+                            <script>
+                                var connectedStudent = JSON.parse(localStorage.getItem("connectedStudent"));
+                                document.getElementById('studentConnectedlName').innerHTML = connectedStudent.lName;
+                                document.getElementById('studentConnectedfName').innerHTML = connectedStudent.fName;
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col">
+                    <div class="message-box">
+                        <ul class="nav nav-pills nav-stacked" id="myTabs">
+                            <li class="col-md-4"><a class="active" href="#tabstudent1" data-toggle="pill">Calcul
+                                    Moyenne</a>
+                            </li>
+                            <li class="col-md-4"><a href="#tabstudent2" data-toggle="pill">Abscences/Présences</a></li>
+                            <li class="col-md-4"><a href="#tabstudent3" data-toggle="pill">Mes notes</a></li>
+                        </ul>
+                    </div>
+                </div><!-- end col -->
+            </div>
+
+            <hr class="invis">
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="tab-content">
+                        <div class="tab-pane active fade show" id="tabstudent1">
+                            <div class="row text-center">
+                                <div class="col-md-12">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-features">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="message-box">
+                                                        <ul class="nav nav-pills nav-stacked" id="myTabs1">
+                                                            <li class="col-md-3"><a class="active" href="#tabstudent11"
+                                                                    data-toggle="pill">QHSE</a></li>
+                                                            <li class="col-md-3"><a href="#tabstudent12"
+                                                                    data-toggle="pill">Soft
+                                                                    Skills</a></li>
+                                                            <li class="col-md-3"><a href="#tabstudent13"
+                                                                    data-toggle="pill">MS
+                                                                    Office</a></li>
+                                                            <li class="col-md-3"><a href="#tabstudent14"
+                                                                    data-toggle="pill">Management & Marketing</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div><!-- end col -->
+                                            </div>
+                                            <div class="tab-content">
+                                                <div class="tab-pane fade show active" id="tabstudent11"><br><br>
+                                                    <!-- formulaire QHSE-->
+                                                    <form class="offset-3">
+                                                        <div class="form-group row">
+                                                            <label for="noteIso9001" class="col-sm-2 col-form-label text-dark">
+                                                                ISO 9001</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control"
+                                                                    id="noteIso9001">
+                                                                <span id="errornoteIso9001"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="noteIso14001"
+                                                                class="col-sm-2 col-form-label text-dark">ISO
+                                                                14001</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control"
+                                                                    id="noteIso14001">
+                                                                <span id="errornoteIso14001"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="noteIso45001"
+                                                                class="col-sm-2 col-form-label text-dark">ISO
+                                                                45001 </label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control"
+                                                                    id="noteIso45001">
+                                                                <span id="errornoteIso45001"></span>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="pricing-table-sign-up text-center">
+                                                        <button type="submit"
+                                                            class="btn btn-light btn-radius btn-brd grd1"
+                                                            onclick="calculMoyenne4matière('noteIso9001', 'noteIso14001', 'noteIso45001', '', 'errornoteIso9001', 'errornoteIso14001', 'errornoteIso45001', '', 2, 2.5, 3, 0, 'moyResultQHSE')">
+                                                            Calculer
+                                                        </button>
+                                                    </div>
+                                                    <p class="offset-3 font-weight-bold text-dark">Votre moyenne est : <span
+                                                            id="moyResultQHSE"></span></p>
+                                                </div>
+                                                <div class="tab-pane fade" id="tabstudent12">
+                                                    <br><br>
+                                                    <form class="offset-3">
+                                                        <div class="form-group row ">
+                                                            <label for="notesoftSkills1"
+                                                                class="col-sm-2 col-form-label text-dark">Soft Skills 1</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control"
+                                                                    id="notesoftSkills1">
+                                                                <span id="errornotesoftSkills1"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="notesoftSkills2"
+                                                                class="col-sm-2 col-form-label text-dark">Soft Skills 2</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control"
+                                                                    id="notesoftSkills2">
+                                                                <span id="errornotesoftSkills2"></span>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="pricing-table-sign-up text-center">
+                                                        <button type="submit"
+                                                            class="btn btn-light btn-radius btn-brd grd1"
+                                                            onclick="calculMoyenne4matière('notesoftSkills1', 'notesoftSkills2', '', '', 'errornotesoftSkills1', 'errornotesoftSkills2', '', '', 2, 3, 0, 0, 'moyResultSS')">
+                                                            Calculer
+                                                        </button>
+                                                    </div>
+                                                    <p class="offset-3 font-weight-bold text-dark">Votre moyenne est : <span
+                                                            id="moyResultSS"></span></p>
+                                                </div>
+                                                <div class="tab-pane fade" id="tabstudent13"><br><br>
+                                                    <form class="offset-2">
+                                                        <div class="form-group row ">
+                                                            <label for="notemsWord" class="col-sm-3 col-form-label text-dark">
+                                                                MS Word</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control"
+                                                                    id="notemsWord">
+                                                                <span id="errornotemsWord"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="notemsExcel" class="col-sm-3 col-form-label text-dark">MS
+                                                                Excel</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control"
+                                                                    id="notemsExcel">
+                                                                <span id="errornotemsExcel"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="notemspowerPoint"
+                                                                class="col-sm-3 col-form-label text-dark">
+                                                                MS Powerpoint </label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control"
+                                                                    id="notemspowerPoint">
+                                                                <span id="errornotemspowerPoint"></span>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="pricing-table-sign-up text-center">
+                                                        <button type="submit"
+                                                            class="btn btn-light btn-radius btn-brd grd1"
+                                                            onclick="calculMoyenne4matière('notemsWord', 'notemsExcel', 'notemspowerPoint', '', 'errornotemsWord', 'errornotemsExcel', 'errornotemspowerPoint', '', 2, 4, 3, 0, 'moyResultMS')">
+                                                            Calculer
+                                                        </button>
+                                                    </div>
+                                                    <p class="offset-2 font-weight-bold text-dark">Votre moyenne est : <span
+                                                            id="moyResultMS"></span></p>
+                                                </div>
+                                                <div class="tab-pane fade" id="tabstudent14"><br><br>
+                                                    <form class="offset-2">
+                                                        <div class="form-group row ">
+                                                            <label for="noteMs"
+                                                                class="col-sm-4 col-form-label text-dark">Management
+                                                                Strategique</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control" id="noteMs">
+                                                                <span id="errornoteMs"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="noteMe"
+                                                                class="col-sm-4 col-form-label text-dark">Management
+                                                                Equipes</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control" id="noteMe">
+                                                                <span id="errornoteMe"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="noteMd"
+                                                                class="col-sm-4 col-form-label text-dark">Marketing
+                                                                Digital</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control" id="noteMd">
+                                                                <span id="errornoteMd"></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="form-group row">
+                                                            <label for="noteMc"
+                                                                class="col-sm-4 col-form-label text-dark">Marketing
+                                                                Commercial</label>
+                                                            <div class="col-sm-6">
+                                                                <input type="number" class="form-control" id="noteMc">
+                                                                <span id="errornoteMc"></span>
+                                                            </div>
+                                                        </div>
+                                                    </form>
+                                                    <div class="pricing-table-sign-up text-center">
+                                                        <button type="submit"
+                                                            class="btn btn-light btn-radius btn-brd grd1"
+                                                            onclick="calculMoyenne4matière('noteMs', 'noteMe', 'noteMd', 'noteMc', 'errornoteMs', 'errornoteMe', 'errornoteMd', 'errornoteMc', 2, 3, 3.5, 3, 'moyResultMM')">
+                                                            Calculer
+                                                        </button>
+                                                    </div>
+                                                    <p class="offset-2 font-weight-bold text-dark">Votre moyenne est : <span
+                                                            id="moyResultMM"></span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div><!-- end row -->
+                        </div><!-- end pane -->
+
+                        <div class="tab-pane fade" id="tabstudent2">
+                            <div class="row text-center">
+                                <div class="col-md-8 offset-2">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>Plus que 4 abscences vous serez</h2>
+                                            <h2>Eliminé !</h2>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <div class="font-weight-bold text-dark"> Nombres de présences est :
+                                                <span id="prAffiche"></span></div>
+                                            <div class="font-weight-bold text-dark"> Nombres d'abscences est : <span
+                                                    id="absAffiche"></span></div>
+                                            <div class="font-weight-bold"><span id="elimination"></span>
+                                            </div>
+                                            <script>
+                                                displayStudentsAP();
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div><!-- end row -->
+                        </div><!-- end pane -->
+
+                        <div class="tab-pane fade" id="tabstudent3">
+                            <div class="row text-center">
+                                <div class="col-md-8 offset-2">
+                                    <div class="pricing-table pricing-table-highlighted">
+                                        <div class="pricing-table-header grd1">
+                                            <h2>Affichage des notes</h2>
+                                        </div>
+                                        <div class="pricing-table-space"></div>
+                                        <div class="pricing-table-features">
+                                            <div class="font-weight-bold text-black-50">
+                                                <span id="afficheStudentNotes"></span></div>
+                                            <script>
+                                                displayStudentsNotes();
+                                            </script>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div><!-- end pane -->
+                    </div><!-- end content -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div>
+    </div>
+
+    <div id="testimonials" class="parallax section db parallax-off"
+        style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Témoignages</h3>
+                <p>Les témoignages et les avis sont nos meilleurs atouts de notre entreprise. </p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>Sami MARROUKI</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Excellent soutien!
+                                </h3>
+                                <p class="lead">Ils ont mon projet à temps avec la concurrence, une
+                                    équipe hautement qualifiée, expérimentée et professionnelle.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <h4>Imed SLAMA</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Services Impressionnants!</h3>
+                                <p class="lead">Votre savoir-faire et implication sont les clés de ma réussite
+                                    d'aujourd'hui.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_03.png" alt="" class="img-fluid ">
+                                <h4>Samia BELAJOUZA</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>
+                                    Équipe formidable et talentueuse!</h3>
+                                <p class="lead">Votre disposition à être réactif pour traiter les demandes et les
+                                    interrogations quel que soit le dossier concerné. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>Helmi BOKRI</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Formation de qualité</h3>
+                                <p class="lead">J'ai effectué une formation QHSE (ISO 9001, ISO 45001) : enrichissante
+                                    et constructive.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>A propos</h3>
+                        </div>
+                        <p class="text-justify">HTK Consulting vous propose une offre complète de formations adaptées à
+                            tout
+                            public : particuliers, étudiants, employés, demandeurs d'emploi et chefs d'entreprises. Un
+                            centre de formation et d'expertise professionnelles, ayant une infrastructure
+                            adaptée aux exigences des normes de la formation demandée.</p>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="https://www.facebook.com/HTK-Consulting-183898968296317/"
+                                        target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul><!-- end links -->
+                        </div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Liens d'informations</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="#">Acceuil</a></li>
+                            <li><a href="#">Blog</a></li>
+                            <li><a href="#">Coûts</a></li>
+                            <li><a href="#">A Propos</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Détails de contact</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@htk.tn</a></li>
+                            <li><a href="index.html">www.htk-consulting.com</a></li>
+                            <li>Sidi Mahrsi, 8062 Nabeul, Tunisie</li>
+                            <li>+216 31 10 48 49</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+    <script src="js/timeline.min.js"></script>
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });
+    </script>
+    
+    <a href="#" id="scroll-to-top" class="dmtop global-radius" title="Haut"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

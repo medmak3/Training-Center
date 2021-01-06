@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- Basic -->
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+<!-- Mobile Metas -->
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Site Metas -->
+<title>HTK Consulting</title>
+<meta name="keywords" content="">
+<meta name="description" content="">
+<meta name="author" content="">
+
+<!-- Site Icons -->
+<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+<link rel="apple-touch-icon" href="images/apple-touch-icon.ico">
+
+<!-- Bootstrap CSS -->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Site CSS -->
+<link rel="stylesheet" href="css/style.css">
+<!-- ALL VERSION CSS -->
+<link rel="stylesheet" href="css/versions.css">
+<!-- Responsive CSS -->
+<link rel="stylesheet" href="css/responsive.css">
+<!-- Custom CSS -->
+<link rel="stylesheet" href="css/custom.css">
+
+<!-- Modernizer for Portfolio -->
+<script src="js/modernizer.js"></script>
+<script src="js/script.js"></script>
+
+<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body class="host_version">
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader-container">
+            <div class="progress-br float shadow">
+                <div class="progress__item"></div>
+            </div>
+        </div>
+    </div>
+    <!-- END LOADER -->
+
+    <!-- Start header -->
+    <header class="top-navbar">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="index.html">
+                    <img src="images/logo.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbars-host"
+                    aria-controls="navbars-rs-food" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbars-host">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Acceuil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="about.html">A Propos</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="dropdown-a"
+                                data-toggle="dropdown">Formations
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="dropdown-a">
+                                   <a class="dropdown-item" href="course-qhse.html">QHSE </a>
+                                <a class="dropdown-item" href="course-soft-skills.html">Soft Skills </a>
+                                <a class="dropdown-item" href="course-office.html">Informatique </a>
+                                <a class="dropdown-item" href="course-Management-Marketing.html">Management et Marketing
+                                </a>
+                            </div>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="teachers.html">Formateurs</a></li>
+                        <li class="nav-item"><a class="nav-link" href="pricing.html">Coûts</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a class="hover-btn-new log orange" href="#" data-toggle="modal"
+                                data-target="#login"><span>Connexion</span></a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- End header -->
+
+    <div class="section lb">
+        <div class="container">
+
+            <div class="row text-center">
+                <div class="col-md-12">
+                    <div class="pricing-table pricing-table-highlighted">
+                        <div class="pricing-table-header grd1">
+                            <h3>Bonjour,</h3>
+                            <h2>
+                                Formateur/Formatrice
+                            </h2>
+                            
+                        </div>
+                    </div>
+                </div>
+            </div><br><br>
+
+            <div class="tab-pane" id="Registration">
+                <form role="form" class="form-horizontal">
+                    <div class="form-group offset-lg-2">
+                        <div class="col-sm-10">
+                            <input class="form-control" placeholder="Nom" id="newTeacherlName" type="text">
+                            <span id="errorNewTeacherlName"></span>
+                        </div>
+                    </div>
+                    <div class="form-group offset-lg-2">
+                        <div class="col-sm-10">
+                            <input class="form-control" placeholder="Prénom" id="newTeacherfName" type="text">
+                            <span id="errorNewTeacherfName"></span>
+                        </div>
+                    </div>
+                    <div class="form-group offset-lg-2">
+                        <div class="col-sm-10">
+                            <input class="form-control" id="newTeacherEmail" placeholder="Email" type="email">
+                            <span id="errorNewTeacherEmail"></span>
+                        </div>
+                    </div>
+                    <div class="form-group offset-lg-2">
+                        <div class="col-sm-10">
+                            <input class="form-control" id="newTeacherMobile" placeholder="Téléphone" type="tel">
+                            <span id="errorNewTeacherMobile"></span>
+                        </div>
+                    </div>
+                    <div class="form-group offset-lg-2">
+                        <div class="col-sm-10">
+                            <input class="form-control" id="newTeacherPwd" placeholder="Mot de passe" type="password">
+                            <span id="errorNewTeacherPwd"></span>
+                        </div>
+                    </div>
+                    <div class="form-group offset-lg-2">
+                        <div class="col-sm-10">
+                            <input class="form-control" id="newTeacherConfirmPwd" placeholder="Confirmation mot de passe"
+                                type="password">
+                            <span id="errorNewTeacherConfirmPwd"></span>
+                        </div>
+                    </div>
+
+                    <div class="form-group offset-lg-2">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <tr class="text-center font-weight-bold">
+                                    <td></td>
+                                    <td>QHSE</td>
+                                    <td>Soft Skills</td>
+                                    <td>MS Office</td>
+                                    <td>Management & Marketing</td>
+                                </tr>
+                                <tr>
+                                    <td class="font-weight-bold h5">Formations</td>
+                                    <td>
+                                        <select name="" id="module1T">
+                                            <option value="" id="vide1T"></option>
+                                            <option value="QHSE" id="QHSET">QHSE</option>
+                                            <option value="ISO 9001" id="iso9001T">ISO 9001</option>
+                                            <option value="ISO 14001" id="iso14001T">ISO 14001</option>
+                                            <option value="ISO 45001" id="iso45001T">ISO 45001</option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="" id="module2T">
+                                            <option value="" id="vide2T"></option>
+                                            <option value="Soft Skills" id="softSkillsT">Soft Skills
+                                            </option>
+                                            <option value="Soft Skills 1" id="softSkills1T">Soft Skills 1
+                                            </option>
+                                            <option value="Soft Skills 2" id="softSkills2T">Soft Skills 2
+                                            </option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="" id="module3T">
+                                            <option value="" id="vide3T"></option>
+                                            <option value="MS Office" id="MS OfficeT">MS Office</option>
+                                            <option value="MS Word" id="MSWordT">MS Word</option>
+                                            <option value="MS Excel" id="MSExcelT">MS Excel</option>
+                                            <option value="MS Powerpoint" id="MSPowerpointT">MS Powerpoint
+                                            </option>
+                                        </select>
+                                    </td>
+                                    <td>
+                                        <select name="" id="module4T">
+                                            <option value="" id="vide4T"></option>
+                                            <option value="Management & Marketing" id="M&MT">Management &
+                                                Marketing</option>
+                                            <option value="Management stratégiqueT"
+                                                id="managementStrategiqueT">
+                                                Management stratégique</option>
+                                            <option value="Management d'équipes" id="managementEquipesT">
+                                                Management
+                                                d'équipes</option>
+                                            <option value="Marketing Digital" id="marketingDigitalT">
+                                                Marketing
+                                                Digital</option>
+                                            <option value="Marketing Commercial" id="marketingCommercialT">
+                                                Marketing
+                                                Commercial</option>
+                                        </select>
+                                    </td>
+                                </tr>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="form-group offset-lg-2">
+                        <div class="col-sm-10 font-weight-bold">
+                            <label class="font-weight-bold h5">Genre : </label>
+                            <div class="form-check form-check-inline offset-1">
+                                <input class="form-check-input" type="radio" name="hommefemme" id="hTeacher" value="Homme">
+                                <label class="form-check-label" for="hTeacher">Homme</label>
+                              </div>
+                              <div class="form-check form-check-inline offset-1">
+                                <input class="form-check-input" type="radio" name="hommefemme" id="fTeacher" value="Femme">
+                                <label class="form-check-label" for="fTeacher">Femme</label>
+                              </div>
+                        </div>
+                    </div>
+                    <br>
+                    <div class="row">
+                        <div class="col-sm-10">
+                            <button type="button" class="btn btn-light btn-radius btn-brd grd1"
+                                onclick="signupStudentTeacher('newTeacherlName', 'newTeacherfName', 'newTeacherEmail', 'newTeacherMobile', 'newTeacherPwd', 'newTeacherConfirmPwd', 'module1T', 'module2T', 'module3T', 'module4T', '','', 'hTeacher', 'fTeacher', 'errorNewTeacherlName', 'errorNewTeacherfName', 'errorNewTeacherEmail', 'errorNewTeacherMobile', 'errorNewTeacherPwd', 'errorNewTeacherConfirmPwd')">
+                                Enregistrer &amp; Continuer
+                            </button>
+                            <button type="reset" class="btn btn-light btn-radius btn-brd grd1">Réinitialiser</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="testimonials" class="parallax section db parallax-off"
+        style="background-image:url('images/parallax_04.jpg');">
+        <div class="container">
+            <div class="section-title text-center">
+                <h3>Témoignages</h3>
+                <p>Les témoignages et les avis sont nos meilleurs atouts de notre entreprise. </p>
+            </div><!-- end title -->
+
+            <div class="row">
+                <div class="col-md-12 col-sm-12">
+                    <div class="testi-carousel owl-carousel owl-theme">
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>Sami MARROUKI</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Excellent soutien!
+                                </h3>
+                                <p class="lead">Ils ont mon projet à temps avec la concurrence, une
+                                    équipe hautement qualifiée, expérimentée et professionnelle.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_02.png" alt="" class="img-fluid">
+                                <h4>Imed SLAMA</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>Services Impressionnants!</h3>
+                                <p class="lead">Votre savoir-faire et implication sont les clés de ma réussite
+                                    d'aujourd'hui.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_03.png" alt="" class="img-fluid ">
+                                <h4>Samia BELAJOUZA</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i>
+                                    Équipe formidable et talentueuse!</h3>
+                                <p class="lead">Votre disposition à être réactif pour traiter les demandes et les
+                                    interrogations quel que soit le dossier concerné. </p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                        <div class="testimonial clearfix">
+                            <div class="testi-meta">
+                                <img src="images/testi_01.png" alt="" class="img-fluid">
+                                <h4>Helmi BOKRI</h4>
+                            </div>
+                            <div class="desc">
+                                <h3><i class="fa fa-quote-left"></i> Formation de qualité</h3>
+                                <p class="lead">J'ai effectué une formation QHSE (ISO 9001, ISO 45001) : enrichissante
+                                    et constructive.</p>
+                            </div>
+                            <!-- end testi-meta -->
+                        </div>
+                        <!-- end testimonial -->
+                    </div><!-- end carousel -->
+                </div><!-- end col -->
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <div class="parallax section dbcolor">
+        <div class="container">
+            <div class="row logos">
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_01.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_02.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_03.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_04.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_05.png" alt="" class="img-repsonsive"></a>
+                </div>
+                <div class="col-md-2 col-sm-2 col-xs-6 wow fadeInUp">
+                    <a href="#"><img src="images/logo_06.png" alt="" class="img-repsonsive"></a>
+                </div>
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </div><!-- end section -->
+
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>A propos</h3>
+                        </div>
+                        <p class="text-justify">HTK Consulting vous propose une offre complète de formations adaptées à
+                            tout
+                            public : particuliers, étudiants, employés, demandeurs d'emploi et chefs d'entreprises. Un
+                            centre de formation et d'expertise professionnelles, ayant une infrastructure
+                            adaptée aux exigences des normes de la formation demandée.</p>
+                        <div class="footer-right">
+                            <ul class="footer-links-soi">
+                                <li><a href="https://www.facebook.com/HTK-Consulting-183898968296317/"
+                                        target="_blank"><i class="fa fa-facebook"></i></a></li>
+                                <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                                <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                            </ul><!-- end links -->
+                        </div>
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Liens d'informations</h3>
+                        </div>
+                        <ul class="footer-links">
+                            <li><a href="index.html">Acceuil</a></li>
+                            <li><a href="about.html">A Propos</a></li>
+                            <li><a href="#dropdown-a">Formations</a></li>
+                            <li><a href="teachers.html">Formateurs</a></li>
+                            <li><a href="pricing.html">Coûts</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+                <div class="col-lg-4 col-md-4 col-xs-12">
+                    <div class="widget clearfix">
+                        <div class="widget-title">
+                            <h3>Détails de contact</h3>
+                        </div>
+
+                        <ul class="footer-links">
+                            <li><a href="mailto:#">info@htk.tn</a></li>
+                            <li><a href="index.html">www.htk-consulting.com</a></li>
+                            <li>Sidi Mahrsi, 8062 Nabeul, Tunisie</li>
+                            <li>+216 31 10 48 49</li>
+                        </ul><!-- end links -->
+                    </div><!-- end clearfix -->
+                </div><!-- end col -->
+
+            </div><!-- end row -->
+        </div><!-- end container -->
+    </footer><!-- end footer -->
+
+  <script src="js/timeline.min.js"></script>
+    <script>
+        timeline(document.querySelectorAll('.timeline'), {
+            forceVerticalMode: 700,
+            mode: 'horizontal',
+            verticalStartPosition: 'left',
+            visibleItems: 4
+        });
+    </script>
+    
+    <a href="#" id="scroll-to-top" class="dmtop global-radius" title="Haut"><i class="fa fa-angle-up"></i></a>
+
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

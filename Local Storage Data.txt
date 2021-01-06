@@ -1,0 +1,22 @@
+
+
+Key : students
+[{"idStudent":1,"fName":"Ala","lName":"Gharssallah","email":"ala@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"12345678","module1":"QHSE","module2":"Soft Skills","module3":"","module4":"","groupe":"Jour","role":"Student"},{"idStudent":2,"fName":"Mohamed","lName":"Makhlouf","email":"med@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"12345678","module1":"ISO 9001","module2":"","module3":"MS Office","module4":"","groupe":"Jour","role":"Student"},{"idStudent":3,"fName":"Mohamed","lName":"Fetni","email":"fetni@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"12345678","module1":"ISO 45001","module2":"","module3":"MS Excel","module4":"","groupe":"Jour","role":"Student"},{"idStudent":4,"fName":"Jamel","lName":"Hamdaoui","email":"jamel@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"12345678","module1":"ISO 45001","module2":"","module3":"MS Powerpoint","module4":"","groupe":"Nuit","role":"Student"},{"idStudent":5,"fName":"Adel","lName":"Hafnaoui","email":"adel@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"12345678","module1":"ISO 14001","module2":"","module3":"","module4":"","groupe":"Nuit","role":"Student"},{"idStudent":6,"fName":"Saber","lName":"Rebai","email":"saber@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"12345678","module1":"ISO 14001","module2":"","module3":"","module4":"","groupe":"Nuit","role":"Student"},{"idStudent":7,"fName":"Fehmi","lName":"Mssadak","email":"fehmi@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"12345678","module1":"ISO 9001","module2":"","module3":"MS Office","module4":"Management stratégique","groupe":"Nuit","role":"Student"},{"idStudent":8,"fName":"Jack","lName":"Bourak","email":"jack@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"98765432","module1":"ISO 9001","module2":"","module3":"","module4":"","groupe":"Nuit","role":"Student"},{"idStudent":9,"fName":"Hana","lName":"Rekik","email":"hana@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"14253698","module1":"","module2":"Soft Skills 1","module3":"MS Powerpoint","module4":"","groupe":"Nuit","role":"Student"},{"idStudent":10,"fName":"Kaouthar","lName":"Azayez","email":"kaouthar@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"14742585","module1":"","module2":"Soft Skills 2","module3":"MS Excel","module4":"","groupe":"Jour","role":"Student"},{"idStudent":11,"fName":"Zaineb","lName":"Bakouri","email":"Zaineb@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"97643179","module1":"","module2":"Soft Skills 1","module3":"MS Office","module4":"","groupe":"Jour","role":"Student"},{"idStudent":12,"fName":"Farah","lName":"Java","email":"farah@htk-student.com","pwd":"12345","confirmPwd":"12345","mobile":"91734628","module1":"","module2":"Soft Skills 2","module3":"MS Word","module4":"Management stratégique","groupe":"Jour","role":"Student"}]
+Key : studentId=13
+
+
+Key : teachers 
+[{"idTeacher":1,"fName":"Aderahmen","lName":"Masmoudi","email":"aderahmen@htk-teacher.com","pwd":"12345","confirmPwd":"12345","mobile":"24253697","module1":"QHSE","module2":"","module3":"MS Office","module4":"","genre":"Homme","role":"Teacher"},{"idTeacher":2,"fName":"Wided","lName":"Wided","email":"wided@htk-teacher.com","pwd":"12345","confirmPwd":"12345","mobile":"55741823","module1":"","module2":"Soft Skills","module3":"","module4":"","genre":"Femme","role":"Teacher"}]
+Key : teacherId=3
+
+
+Abscences : 
+Key : AS
+[{"idAbsP":1,"idStudent":1,"AbsP":0},{"idAbsP":2,"idStudent":2,"AbsP":0},{"idAbsP":3,"idStudent":3,"AbsP":0},{"idAbsP":4,"idStudent":4,"AbsP":0},{"idAbsP":5,"idStudent":5,"AbsP":0},{"idAbsP":6,"idStudent":6,"AbsP":0},{"idAbsP":7,"idStudent":7,"AbsP":0},{"idAbsP":8,"idStudent":8,"AbsP":0},{"idAbsP":9,"idStudent":9,"AbsP":0},{"idAbsP":10,"idStudent":10,"AbsP":0},{"idAbsP":11,"idStudent":11,"AbsP":0},{"idAbsP":12,"idStudent":12,"AbsP":0}]
+key : idAbsP=13
+
+
+Presences : 
+Key : PS
+[{"idAbsP":1,"idStudent":1,"AbsP":0},{"idAbsP":2,"idStudent":2,"AbsP":0},{"idAbsP":3,"idStudent":3,"AbsP":0},{"idAbsP":4,"idStudent":4,"AbsP":0},{"idAbsP":5,"idStudent":5,"AbsP":0},{"idAbsP":6,"idStudent":6,"AbsP":0},{"idAbsP":7,"idStudent":7,"AbsP":0},{"idAbsP":8,"idStudent":8,"AbsP":0},{"idAbsP":9,"idStudent":9,"AbsP":0},{"idAbsP":10,"idStudent":10,"AbsP":0},{"idAbsP":11,"idStudent":11,"AbsP":0},{"idAbsP":12,"idStudent":12,"AbsP":0}]
+key : idAbsP=13
